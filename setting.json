@@ -1,26 +1,32 @@
 {
-    "editor.fontSize": 16,
+    "window.zoomLevel": 0,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
     "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": false,
+
+
+    "editor.fontSize": 16,
     "workbench.iconTheme": "vscode-great-icons",
-    "window.zoomLevel": 0,
     "go.docsTool": "gogetdoc",
     "go.useLanguageServer": true,
     "go.inferGopath": true,
     "go.autocompleteUnimportedPackages": true,
-    "go.buildOnSave": false,
-    "go.lintOnSave": true,
-    "go.vetOnSave": true,
+    "go.buildOnSave": "off",
+    "go.lintOnSave": "workspace",
+    "go.vetOnSave": "workspace",
     "go.buildTags": "",
     "go.buildFlags": [],
     "go.lintFlags": [],
     "go.vetFlags": [],
     "go.coverOnSave": false,
     "go.useCodeSnippetsOnFunctionSuggest": false,
-    "go.formatOnSave": true,
     "go.formatTool": "goreturns",
-    "go.goroot": "/Users/pallat/bin/go",
+    "go.goroot": "/home/pallat/bin/go",
     "go.gocodeAutoBuild": false,
-    "files.associations": {"*.tmpl": "html"}
+    "files.associations": {
+        "*.tmpl": "html"
+    }
 }
