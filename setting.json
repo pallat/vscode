@@ -1,22 +1,17 @@
 {
-    "window.zoomLevel": 0,
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true
-    },
+    "editor.hover.enabled": false,
+    "editor.fontSize": 16,
     "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.formatOnPaste": false,
-
-
-    "editor.fontSize": 16,
     "workbench.iconTheme": "vscode-great-icons",
+    "window.zoomLevel": 0,
     "go.docsTool": "gogetdoc",
-    "go.useLanguageServer": true,
     "go.inferGopath": true,
     "go.autocompleteUnimportedPackages": true,
-    "go.buildOnSave": "off",
-    "go.lintOnSave": "workspace",
-    "go.vetOnSave": "workspace",
+    "go.buildOnSave": false,
+    "go.lintOnSave": true,
+    "go.vetOnSave": true,
     "go.buildTags": "",
     "go.buildFlags": [],
     "go.lintFlags": [],
@@ -24,9 +19,19 @@
     "go.coverOnSave": false,
     "go.useCodeSnippetsOnFunctionSuggest": false,
     "go.formatTool": "goreturns",
-    "go.goroot": "/home/pallat/bin/go",
+    "go.goroot": "/Users/pallat/bin/go",
     "go.gocodeAutoBuild": false,
     "files.associations": {
         "*.tmpl": "html"
-    }
+    },
+    "editor.renderWhitespace": "all",
+    "clojureVSCode.autoStartNRepl": true,
+    "team.showWelcomeMessage": false,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true,
+    "files.autoSave": "afterDelay",
+    "workbench.colorTheme": "Visual Studio Dark",
+    "ruby.useLanguageServer": true
 }
