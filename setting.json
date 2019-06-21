@@ -1,37 +1,55 @@
 {
-    "editor.hover.enabled": false,
     "editor.fontSize": 16,
+    "editor.formatOnSave": true,
+    "terminal.external.osxExec": "iTerm.app",
+    "workbench.iconTheme": "material-icon-theme",
+    "go.useLanguageServer": true,
+    "go.goroot": "~/bin/go",
+    "go.formatTool": "gofmt",
+    "go.alternateTools": {
+        // "go-langserver": "bingo"
+        "gopls": "bingo"
+    },
+    "go.languageServerFlags": [
+        "--diagnostics-style=instant",
+        "--enhance-signature-help",
+        "--format-style=goimports",
+        "--goimports-prefix='github.com/nezorflame'", // enter your own here
+    ],
+    "go.languageServerExperimentalFeatures": {
+        "diagnostics": true, // for build and vet errors as you type
+        "format": true,
+        "autoComplete": true,
+        "rename": true,
+        "goToDefinition": true,
+        "hover": true,
+        "signatureHelp": true,
+        "goToTypeDefinition": true,
+        "goToImplementation": true,
+        "documentSymbols": true,
+        "workspaceSymbols": true,
+        "findReferences": true
+    },
+    "go.docsTool": "gogetdoc",
     "atomKeymap.promptV3Features": true,
     "editor.multiCursorModifier": "ctrlCmd",
-    "editor.formatOnPaste": false,
-    "workbench.iconTheme": "vscode-great-icons",
-    "window.zoomLevel": 0,
-    "go.docsTool": "gogetdoc",
-    "go.inferGopath": true,
-    "go.autocompleteUnimportedPackages": true,
-    "go.buildOnSave": false,
-    "go.lintOnSave": true,
-    "go.vetOnSave": true,
-    "go.buildTags": "",
-    "go.buildFlags": [],
-    "go.lintFlags": [],
-    "go.vetFlags": [],
-    "go.coverOnSave": false,
-    "go.useCodeSnippetsOnFunctionSuggest": false,
-    "go.formatTool": "goreturns",
-    "go.goroot": "/Users/pallat/bin/go",
-    "go.gocodeAutoBuild": false,
-    "files.associations": {
-        "*.tmpl": "html"
+    "window.zoomLevel": 1,
+    "terminal.integrated.fontFamily": "Droid Sans Mono for Powerline",
+    "terminal.integrated.drawBoldTextInBrightColors": false,
+    "terminal.integrated.enableBell": true,
+    "terminal.integrated.fontSize": 14,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "d.dubPath": "/Users/pallat/.vscode/extensions/webfreak.code-d-0.19.0/bin/dub",
+    "dart.flutterSdkPath": "/Users/pallat/flutter",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
     },
-    "editor.renderWhitespace": "all",
-    "clojureVSCode.autoStartNRepl": true,
-    "team.showWelcomeMessage": false,
-    "gitlens.advanced.messages": {
-        "suppressShowKeyBindingsNotice": true
-    },
-    "gitlens.historyExplorer.enabled": true,
-    "files.autoSave": "afterDelay",
-    "workbench.colorTheme": "Visual Studio Dark",
-    "ruby.useLanguageServer": true
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "mermaid-editor.preview.theme": "dark"
+    // "mermaid-editor.generate.theme": "dark"
 }
